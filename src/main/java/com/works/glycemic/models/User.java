@@ -1,12 +1,14 @@
 package com.works.glycemic.models;
 
 import lombok.Data;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Data
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long uid;
@@ -15,6 +17,7 @@ public class User {
     private String surname;
     private Integer cityid;
     private String mobile;
+
 
     @Column(unique = true, length = 300)
     private String email;
@@ -31,5 +34,5 @@ public class User {
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "rid"))
     private List<Role> roles;
-}
 
+}
