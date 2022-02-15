@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "65f77e9d-f4ce-498c-a0f1-c4b6452316cd",
+		"name": "-Glycemic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"item": [
+				{
+					"name": "userRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ali\",\n    \"surname\": \"Bilmem\",\n    \"cityid\": 1,\n    \"mobile\": \"5436667788\",\n    \"email\": \"ali@mail.com\",\n    \"password\": \"12345\",\n    \"enabled\": true,\n    \"tokenExpired\": true,\n    \"roles\": [\n        { \"rid\": 0, \"name\": \"role_user\" }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}register/userRegister",
+							"host": [
+								"{{base_url}}register"
+							],
+							"path": [
+								"userRegister"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "userRegister",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Ali\",\n    \"surname\": \"Bilmem\",\n    \"cityid\": 1,\n    \"mobile\": \"5436667788\",\n    \"email\": \"ali@mail.com\",\n    \"password\": \"12345\",\n    \"enabled\": true,\n    \"tokenExpired\": true,\n    \"roles\": [\n        { \"rid\": 0, \"name\": \"role_user\" }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}register/userRegister",
+									"host": [
+										"{{base_url}}register"
+									],
+									"path": [
+										"userRegister"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Feb 2022 08:38:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Kayıt işlemi başarılı\",\n    \"result\": {\n        \"uid\": 2,\n        \"name\": \"Ali\",\n        \"surname\": \"Bilmem\",\n        \"cityid\": 1,\n        \"mobile\": \"5436667788\",\n        \"email\": \"ali@mail.com\",\n        \"password\": \"12345\",\n        \"enabled\": true,\n        \"tokenExpired\": true,\n        \"roles\": [\n            {\n                \"rid\": 2,\n                \"name\": \"ROLE_user\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "adminRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gly\",\n    \"surname\": \"Cemic\",\n    \"cityid\": 1,\n    \"mobile\": \"54377788899\",\n    \"email\": \"admin@mail.com\",\n    \"password\": \"12345\",\n    \"enabled\": true,\n    \"tokenExpired\": true,\n    \"roles\": [\n        { \"rid\": 0, \"name\": \"role_user\" }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}register/adminRegister",
+							"host": [
+								"{{base_url}}register"
+							],
+							"path": [
+								"adminRegister"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "adminRegister",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Gly\",\n    \"surname\": \"Cemic\",\n    \"cityid\": 1,\n    \"mobile\": \"54377788899\",\n    \"email\": \"admin@mail.com\",\n    \"password\": \"12345\",\n    \"enabled\": true,\n    \"tokenExpired\": true,\n    \"roles\": [\n        { \"rid\": 0, \"name\": \"role_user\" }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}register/adminRegister",
+									"host": [
+										"{{base_url}}register"
+									],
+									"path": [
+										"adminRegister"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Feb 2022 08:40:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Kayıt işlemi başarılı \",\n    \"result\": {\n        \"uid\": 3,\n        \"name\": \"Gly\",\n        \"surname\": \"Cemic\",\n        \"cityid\": 1,\n        \"mobile\": \"54377788899\",\n        \"email\": \"admin@mail.com\",\n        \"password\": \"12345\",\n        \"enabled\": true,\n        \"tokenExpired\": true,\n        \"roles\": [\n            {\n                \"rid\": 1,\n                \"name\": \"ROLE_global\"\n            },\n            {\n                \"rid\": 2,\n                \"name\": \"ROLE_user\"\n            },\n            {\n                \"rid\": 3,\n                \"name\": \"ROLE_admin\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Foods",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "ali@mail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cid\": 11,\n    \"name\": \"Kavun\",\n    \"glycemicindex\": 72,\n    \"image\": \"base64\",\n    \"source\": \"source.pdf\",\n    \"enabled\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}foods/save",
+							"host": [
+								"{{base_url}}foods"
+							],
+							"path": [
+								"save"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cid\": 11,\n    \"name\": \"Karpuz\",\n    \"glycemicindex\": 72,\n    \"image\": \"base64\",\n    \"source\": \"source.pdf\",\n    \"enabled\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}foods/save",
+									"host": [
+										"{{base_url}}foods"
+									],
+									"path": [
+										"save"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Feb 2022 12:15:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Ürün kayıt başarılı\",\n    \"result\": {\n        \"createdDate\": 1644063307328,\n        \"modifiedDate\": 1644063307328,\n        \"createdBy\": \"admin@mail.com\",\n        \"modifiedBy\": \"admin@mail.com\",\n        \"gid\": 4,\n        \"cid\": 11,\n        \"name\": \"Karpuz\",\n        \"glycemicindex\": 72,\n        \"image\": \"base64\",\n        \"source\": \"source.pdf\",\n        \"enabled\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "ali@mail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}foods/list",
+							"host": [
+								"{{base_url}}foods"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}foods/list",
+									"host": [
+										"{{base_url}}foods"
+									],
+									"path": [
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Feb 2022 12:30:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Ürün Listesi\",\n    \"result\": [\n        {\n            \"createdDate\": 0,\n            \"modifiedDate\": 0,\n            \"createdBy\": null,\n            \"modifiedBy\": null,\n            \"gid\": 1,\n            \"cid\": 10,\n            \"name\": \"Ekmek\",\n            \"glycemicindex\": 60,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        },\n        {\n            \"createdDate\": 1644061283278,\n            \"modifiedDate\": 1644061283278,\n            \"createdBy\": null,\n            \"modifiedBy\": null,\n            \"gid\": 2,\n            \"cid\": 11,\n            \"name\": \"Üzüm\",\n            \"glycemicindex\": 46,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        },\n        {\n            \"createdDate\": 1644062873495,\n            \"modifiedDate\": 1644062873495,\n            \"createdBy\": \"ali@mail.com\",\n            \"modifiedBy\": \"ali@mail.com\",\n            \"gid\": 3,\n            \"cid\": 11,\n            \"name\": \"Şeftali\",\n            \"glycemicindex\": 33,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        },\n        {\n            \"createdDate\": 1644063307328,\n            \"modifiedDate\": 1644063307328,\n            \"createdBy\": \"admin@mail.com\",\n            \"modifiedBy\": \"admin@mail.com\",\n            \"gid\": 4,\n            \"cid\": 11,\n            \"name\": \"Karpuz\",\n            \"glycemicindex\": 72,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        },\n        {\n            \"createdDate\": 1644064038328,\n            \"modifiedDate\": 1644064038328,\n            \"createdBy\": \"ali@mail.com\",\n            \"modifiedBy\": \"ali@mail.com\",\n            \"gid\": 5,\n            \"cid\": 11,\n            \"name\": \"Kavun\",\n            \"glycemicindex\": 72,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "userFoodList",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "ali@mail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}foods/userFoodList",
+							"host": [
+								"{{base_url}}foods"
+							],
+							"path": [
+								"userFoodList"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "userFoodList",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}foods/userFoodList",
+									"host": [
+										"{{base_url}}foods"
+									],
+									"path": [
+										"userFoodList"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Feb 2022 13:06:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Ürün Listesi\",\n    \"result\": [\n        {\n            \"createdDate\": 1644062873495,\n            \"modifiedDate\": 1644062873495,\n            \"createdBy\": \"ali@mail.com\",\n            \"modifiedBy\": \"ali@mail.com\",\n            \"gid\": 3,\n            \"cid\": 11,\n            \"name\": \"Şeftali\",\n            \"glycemicindex\": 33,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        },\n        {\n            \"createdDate\": 1644064038328,\n            \"modifiedDate\": 1644064038328,\n            \"createdBy\": \"ali@mail.com\",\n            \"modifiedBy\": \"ali@mail.com\",\n            \"gid\": 5,\n            \"cid\": 11,\n            \"name\": \"Kavun\",\n            \"glycemicindex\": 72,\n            \"image\": \"base64\",\n            \"source\": \"source.pdf\",\n            \"enabled\": false\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:8080/",
+			"type": "string"
+		}
+	]
+}
